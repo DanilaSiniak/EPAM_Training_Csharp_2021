@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\sinya\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\sinya\\.nuget\\packages"
+    ]
+  }
+}
