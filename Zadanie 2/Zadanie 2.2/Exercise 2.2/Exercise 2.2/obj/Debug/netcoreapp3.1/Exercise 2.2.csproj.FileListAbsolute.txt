@@ -1,0 +1,13 @@
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\bin\Debug\netcoreapp3.1\Exercise 2.2.exe
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\bin\Debug\netcoreapp3.1\Exercise 2.2.deps.json
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\bin\Debug\netcoreapp3.1\Exercise 2.2.runtimeconfig.json
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\bin\Debug\netcoreapp3.1\Exercise 2.2.runtimeconfig.dev.json
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\bin\Debug\netcoreapp3.1\Exercise 2.2.dll
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\bin\Debug\netcoreapp3.1\Exercise 2.2.pdb
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\obj\Debug\netcoreapp3.1\Exercise 2.2.csprojAssemblyReference.cache
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\obj\Debug\netcoreapp3.1\Exercise 2.2.AssemblyInfoInputs.cache
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\obj\Debug\netcoreapp3.1\Exercise 2.2.AssemblyInfo.cs
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\obj\Debug\netcoreapp3.1\Exercise 2.2.csproj.CoreCompileInputs.cache
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\obj\Debug\netcoreapp3.1\Exercise 2.2.dll
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\obj\Debug\netcoreapp3.1\Exercise 2.2.pdb
+D:\EPAM\git\Zadanie 1\Exercise 2\Exercise 2.2\Exercise 2.2\Exercise 2.2\obj\Debug\netcoreapp3.1\Exercise 2.2.genruntimeconfig.cache
