@@ -1,0 +1,13 @@
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\obj\Debug\netcoreapp3.1\Zadanie 3.csprojAssemblyReference.cache
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\obj\Debug\netcoreapp3.1\Zadanie 3.AssemblyInfoInputs.cache
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\obj\Debug\netcoreapp3.1\Zadanie 3.AssemblyInfo.cs
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\obj\Debug\netcoreapp3.1\Zadanie 3.csproj.CoreCompileInputs.cache
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\bin\Debug\netcoreapp3.1\Zadanie 3.exe
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\bin\Debug\netcoreapp3.1\Zadanie 3.deps.json
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\bin\Debug\netcoreapp3.1\Zadanie 3.runtimeconfig.json
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\bin\Debug\netcoreapp3.1\Zadanie 3.runtimeconfig.dev.json
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\bin\Debug\netcoreapp3.1\Zadanie 3.dll
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\bin\Debug\netcoreapp3.1\Zadanie 3.pdb
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\obj\Debug\netcoreapp3.1\Zadanie 3.dll
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\obj\Debug\netcoreapp3.1\Zadanie 3.pdb
+D:\EPAM\Zad 3\Zadanie 3\Zadanie 3\obj\Debug\netcoreapp3.1\Zadanie 3.genruntimeconfig.cache
