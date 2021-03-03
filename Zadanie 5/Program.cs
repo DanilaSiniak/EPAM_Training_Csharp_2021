@@ -10,6 +10,8 @@ namespace Zadanie
   
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите ваш x и точность \n" +
+                "Формат ввода: x пробел точность");
             string Input = Console.ReadLine();
             string[] аргумент = Input.Split(' ');
             double x = Convert.ToDouble(аргумент[0]);
