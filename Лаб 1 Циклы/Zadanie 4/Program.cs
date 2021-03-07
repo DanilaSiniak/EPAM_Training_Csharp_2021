@@ -19,7 +19,7 @@ namespace Zadanie_4
             
             Console.Write("Введите точность(epsilon): ");
             string userEpsilon = Console.ReadLine();
-            double epsilon = Convert.ToDouble(userA); 
+            double epsilon = Convert.ToDouble(userEpsilon); 
             
             double value = a switch
             {
