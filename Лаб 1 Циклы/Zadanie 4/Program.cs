@@ -11,13 +11,16 @@ namespace Zadanie_4
            
             Console.Write("Введите значение a: ");
             string userA = Console.ReadLine();
-            double a = Convert.ToDouble(userA); //// конвертация string в int
+            double a = Convert.ToDouble(userA); 
+            
             Console.Write("Введите значение b: ");
             string userB = Console.ReadLine();
-            double b = Convert.ToDouble(userB); //// конвертация string в int
+            double b = Convert.ToDouble(userB); 
+            
             Console.Write("Введите точность(epsilon): ");
             string userEpsilon = Console.ReadLine();
-            double epsilon = Convert.ToDouble(userA); //// конвертация string в int
+            double epsilon = Convert.ToDouble(userA); 
+            
             double value = a switch
             {
                 _ when Func(a) * FuncSecondDerivative(a) > 0 => a,
