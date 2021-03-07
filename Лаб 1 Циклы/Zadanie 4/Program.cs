@@ -5,8 +5,19 @@ namespace Zadanie_4
     class Program
     {
         static void Main(string[] args)
-        {   
-            double a = 0.5, b = 1;
+        {
+
+           
+           
+            Console.Write("Введите значение a: ");
+            string userA = Console.ReadLine();
+            double a = Convert.ToDouble(userA); //// конвертация string в int
+            Console.Write("Введите значение b: ");
+            string userB = Console.ReadLine();
+            double b = Convert.ToDouble(userB); //// конвертация string в int
+            Console.Write("Введите точность(epsilon): ");
+            string userEpsilon = Console.ReadLine();
+            double epsilon = Convert.ToDouble(userA); //// конвертация string в int
             double value = a switch
             {
                 _ when Func(a) * FuncSecondDerivative(a) > 0 => a,
@@ -15,7 +26,7 @@ namespace Zadanie_4
             };
 
             double x0, x1 = (a + b) / 2;
-            double epsilon = 0.00000001;
+            
             int i1 = 0;
             do
             {
@@ -39,7 +50,7 @@ namespace Zadanie_4
         }
         public static double FuncSecondDerivative(double x)
         {
-            return 13 * (-13 * Math.Cos(Math.Pow(x, 0.52) + 2) + (12 * Math.Sin(Math.Pow(x, 0.52) + 2)) / (Math.Pow(x, 0.52))); 
+            return 13 * (-13 * Math.Cos(Math.Pow(x, 0.52) + 2) + (12 * Math.Sin(Math.Pow(x, 0.52) + 2)) / (Math.Pow(x, 0.52)));
         }
     }
 }
