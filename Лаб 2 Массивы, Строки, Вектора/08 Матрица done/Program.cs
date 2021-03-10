@@ -4,14 +4,10 @@ using System.IO;
 using System.Linq;
 
 class Program
-
-
 {
     static void Main(string[] args)
     {
-
-        StreamReader inputFile = new StreamReader("Input.txt");
-
+       //////////////////// чтение с файла //////////////////
         string[] s = File.ReadAllLines("Input.txt");
         int[][] array = (from i in s
                          select i.Trim().Split(' ').
@@ -24,9 +20,6 @@ class Program
             }
             Console.WriteLine();
         }
-
-
-
         // получаем кол-во строк 
         int length1 = 7;
         // получаем кол-во столбцов 
@@ -51,19 +44,18 @@ class Program
             Console.WriteLine();
         }
         //  находим нулевые столбцы
-        for (int i = 0; i < length1; ++i)
+        for (int i = 0; i < length2; ++i)
         {
             bool b = false;
-            for (int j = 0; j < length2; ++j)
+            for (int j = 0; j < length1; ++j)
             {
 
-                if (array[i][j] != 0) b = true;
+                if (array[j][i] != 0) b = true;
             }
             if (!b) ls2.Add(i);
 
         }
-        //  Удаляем нулевые строки и столбцы и находим номер первой из строк (начиная с нуля),
-        // содержащих хотя бы один положительный элемент
+        //  Удаляем нулевые строки и столбцы 
         bool B = false; int? Istr = null;
         Console.WriteLine("======Удаляем нулевые строки и столбцы=========");
         for (int i = 0; i < length1; ++i)
@@ -92,21 +84,13 @@ class Program
             if (!ls1.Contains(i))
                 Console.WriteLine();
         }
-            for (var g = 0; g < 7; g++)
-            {
-                for (var j = 0; j < 6; j++)
-                {
-
-                    Console.WriteLine(array[g][j]);
-                }
-            }
-        Console.Read();
-
+        ///////////////////////// Запись в файл ////////////////////////
+        Console.ReadKey();
         s = File.ReadAllLines("Input.txt");
         array = (from i in s
-                         select i.Trim().Split(' ').
-                         Select(x => int.Parse(x.Trim())).ToArray()).ToArray();
-        using (StreamWriter sw = new StreamWriter("Output.txt",false,System.Text.Encoding.Default))
+                 select i.Trim().Split(' ').
+                 Select(x => int.Parse(x.Trim())).ToArray()).ToArray();
+        using (StreamWriter sw = new StreamWriter("Output.txt", false, System.Text.Encoding.Default))
         {
             string same = "";
             for (int i = 0; i < 7; i++)
@@ -115,10 +99,9 @@ class Program
                 {
                     same += array[i][j] + " ";
                 }
-                sw.WriteLine(same);
+                sw.Write(same);
                 same = "";
             }
         }
-
     }
 }

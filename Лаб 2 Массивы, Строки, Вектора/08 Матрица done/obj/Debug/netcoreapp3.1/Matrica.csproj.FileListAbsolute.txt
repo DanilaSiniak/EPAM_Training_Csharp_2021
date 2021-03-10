@@ -1,0 +1,13 @@
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\bin\Debug\netcoreapp3.1\Matrica.exe
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\bin\Debug\netcoreapp3.1\Matrica.deps.json
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\bin\Debug\netcoreapp3.1\Matrica.runtimeconfig.json
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\bin\Debug\netcoreapp3.1\Matrica.runtimeconfig.dev.json
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\bin\Debug\netcoreapp3.1\Matrica.dll
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\bin\Debug\netcoreapp3.1\Matrica.pdb
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\obj\Debug\netcoreapp3.1\Matrica.csprojAssemblyReference.cache
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\obj\Debug\netcoreapp3.1\Matrica.AssemblyInfoInputs.cache
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\obj\Debug\netcoreapp3.1\Matrica.AssemblyInfo.cs
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\obj\Debug\netcoreapp3.1\Matrica.csproj.CoreCompileInputs.cache
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\obj\Debug\netcoreapp3.1\Matrica.dll
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\obj\Debug\netcoreapp3.1\Matrica.pdb
+D:\EPAM\Lab2\Matrica\Matrica\Matrica\obj\Debug\netcoreapp3.1\Matrica.genruntimeconfig.cache
