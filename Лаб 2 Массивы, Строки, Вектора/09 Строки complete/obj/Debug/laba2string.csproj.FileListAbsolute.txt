@@ -1,0 +1,7 @@
+D:\EPAM\laba2string\laba2string\obj\Debug\laba2string.csprojAssemblyReference.cache
+D:\EPAM\laba2string\laba2string\obj\Debug\laba2string.csproj.CoreCompileInputs.cache
+D:\EPAM\laba2string\laba2string\bin\Debug\laba2string.exe.config
+D:\EPAM\laba2string\laba2string\bin\Debug\laba2string.exe
+D:\EPAM\laba2string\laba2string\bin\Debug\laba2string.pdb
+D:\EPAM\laba2string\laba2string\obj\Debug\laba2string.exe
+D:\EPAM\laba2string\laba2string\obj\Debug\laba2string.pdb
