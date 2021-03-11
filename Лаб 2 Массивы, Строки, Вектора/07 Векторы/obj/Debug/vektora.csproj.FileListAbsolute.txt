@@ -1,0 +1,7 @@
+D:\EPAM\vektora\vektora\bin\Debug\vektora.exe.config
+D:\EPAM\vektora\vektora\bin\Debug\vektora.exe
+D:\EPAM\vektora\vektora\bin\Debug\vektora.pdb
+D:\EPAM\vektora\vektora\obj\Debug\vektora.csprojAssemblyReference.cache
+D:\EPAM\vektora\vektora\obj\Debug\vektora.csproj.CoreCompileInputs.cache
+D:\EPAM\vektora\vektora\obj\Debug\vektora.exe
+D:\EPAM\vektora\vektora\obj\Debug\vektora.pdb
