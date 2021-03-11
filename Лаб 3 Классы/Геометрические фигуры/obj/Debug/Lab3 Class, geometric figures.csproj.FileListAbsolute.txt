@@ -1,0 +1,7 @@
+D:\EPAM\Lab3 Class, geometric figures\Lab3 Class, geometric figures\bin\Debug\Lab3 Class, geometric figures.exe.config
+D:\EPAM\Lab3 Class, geometric figures\Lab3 Class, geometric figures\bin\Debug\Lab3 Class, geometric figures.exe
+D:\EPAM\Lab3 Class, geometric figures\Lab3 Class, geometric figures\bin\Debug\Lab3 Class, geometric figures.pdb
+D:\EPAM\Lab3 Class, geometric figures\Lab3 Class, geometric figures\obj\Debug\Lab3 Class, geometric figures.csprojAssemblyReference.cache
+D:\EPAM\Lab3 Class, geometric figures\Lab3 Class, geometric figures\obj\Debug\Lab3 Class, geometric figures.csproj.CoreCompileInputs.cache
+D:\EPAM\Lab3 Class, geometric figures\Lab3 Class, geometric figures\obj\Debug\Lab3 Class, geometric figures.exe
+D:\EPAM\Lab3 Class, geometric figures\Lab3 Class, geometric figures\obj\Debug\Lab3 Class, geometric figures.pdb
