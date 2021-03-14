@@ -19,6 +19,19 @@ namespace Lab3_Class__geometric_figures
     {
         double sideofPentagon;
 
+        /// Свойство для стороны 
+        public double SideofPentagon
+        {
+            get 
+            {
+                return sideofPentagon;
+            }
+            set
+            {
+                sideofPentagon = SideofPentagon;
+            }
+        }
+
         public Pentagon(double sideofPentagon)
         {
             this.sideofPentagon = sideofPentagon;
@@ -64,11 +77,11 @@ namespace Lab3_Class__geometric_figures
             string side = Console.ReadLine();
             double sideofPentagon = Convert.ToDouble(side);
 
-          
+
             Pentagon pentagon;
             pentagon = new Pentagon(sideofPentagon);
 
-          
+
 
             if (pentagon.CheckInputDate == -1)
             {
@@ -78,7 +91,7 @@ namespace Lab3_Class__geometric_figures
             }
             else
             {
-                Console.WriteLine("Площадь пятиугольника " +  pentagon.SquareOfPentagon());
+                Console.WriteLine("Площадь пятиугольника " + pentagon.SquareOfPentagon());
                 Console.WriteLine("Периметр пятиугольника " + pentagon.PerimetrOfPentagon());
                 Console.ReadLine();
 
@@ -88,5 +101,3 @@ namespace Lab3_Class__geometric_figures
         }
     }
 }
-
-    

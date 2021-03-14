@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("Lab3 Class, geometric figures")]
+[assembly: AssemblyTitle("ConsoleApp3")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Lab3 Class, geometric figures")]
+[assembly: AssemblyProduct("ConsoleApp3")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("ad58b584-b5e2-4fb6-a956-8aae6a046d39")]
+[assembly: Guid("27f3fdba-3b80-4c9f-b820-f0c93f6766ab")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //

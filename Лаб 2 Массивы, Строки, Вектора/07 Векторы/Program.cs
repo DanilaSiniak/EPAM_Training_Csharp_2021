@@ -32,10 +32,10 @@ namespace Lab4
                         sw.WriteLine($"Локальный минимум = {mas[i]}");
                         k++;
                     }
-
+                    Console.WriteLine();
                 }
             }
-            Console.WriteLine();
+         
 
         }
     }
