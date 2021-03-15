@@ -66,10 +66,10 @@ namespace overload
         }
 
         ///// произведение векторов
-        public static int VectorMultiplication(Vector v1, Vector v2)
+     /*   public static int VectorMultiplication(Vector v1, Vector v2)
         {
             return ((v1.Y * v2.Z - v1.Z * v2.Y) - (v1.X * v2.Z - v1.Z * v2.X) + (v1.X * v2.Y - v1.Y * v2.X));
-        }
+        }*/
 
 
         public static int VectorProduct(Vector v1, Vector v2)
@@ -114,13 +114,15 @@ namespace overload
             Vector v1 = new Vector(x, y, z);
             Vector v2 = new Vector(x1, y1, z1);
 
-            Vector VectorProiz = v1 * v2;
+           
             ///// Сумма векторов
             Vector VectorSum = v1 + v2;
             ///// Разность векторов
             Vector VectorSubsr = v1 - v2;
-
-            int vectorMultiplication = Vector.VectorMultiplication(v1, v2);
+            ///// Скалярное произведение векторов
+            int VectorProiz = Vector.VectorProduct(v1, v2);
+            ///// Произведение векторов
+            Vector vectorMultiplication = v1 * v2;
 
 
 
@@ -129,8 +131,8 @@ namespace overload
                             "\n" +
                             "\nСумма векторов: " + VectorSum +
                             "\nВычитание векторов: " + VectorSubsr +
-                            "\nПроизведение векторов " + VectorProiz +
-                            "\nСкалярное произведение векторов: " + vectorMultiplication);
+                            "\nПроизведение векторов " + vectorMultiplication +
+                            "\nСкалярное произведение векторов: " + VectorProiz);
 
             Console.ReadLine();
         }
