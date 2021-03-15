@@ -47,31 +47,31 @@ namespace overload
 
 
 
-        /// Перегрузка 
+        /// Перегрузка плюса
         public static Vector operator + (Vector v1, Vector v2)
         {
             
             return new Vector(v1.X + v2.X, v1.Y + v2.Y, v1.Z + v2.Z);
         }
-
+        /// Перегрузка минуса
         public static Vector operator -(Vector v1, Vector v2)
         {
             return new Vector(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z);
         }
 
-
+        /// Перегрузка умножить
         public static Vector operator *(Vector v1, Vector v2)
         {
             return new Vector(v1.X * v2.X, v1.Y * v2.Y, v1.Z * v2.Z);
         }
 
-        ///// произведение векторов
+       
      /*   public static int VectorMultiplication(Vector v1, Vector v2)
         {
             return ((v1.Y * v2.Z - v1.Z * v2.Y) - (v1.X * v2.Z - v1.Z * v2.X) + (v1.X * v2.Y - v1.Y * v2.X));
         }*/
 
-
+        /// Скалярное произведение
         public static int VectorProduct(Vector v1, Vector v2)
         {
             return ((v1.X * v2.X ) + (v1.Z * v2.Z) + (v1.Y*v2.Y));
@@ -88,8 +88,6 @@ namespace overload
     }
     class Program
     {
-
-
 
         static void Main(string[] args)
         {
