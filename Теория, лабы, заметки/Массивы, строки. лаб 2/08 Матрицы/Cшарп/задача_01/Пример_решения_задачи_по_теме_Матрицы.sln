@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Пример_решения_задачи_по_теме_Матрицы", "Пример_решения_задачи_по_теме_Матрицы\Пример_решения_задачи_по_теме_Матрицы.csproj", "{0ED4708D-46FB-4608-BB31-D209B729D6CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ED4708D-46FB-4608-BB31-D209B729D6CF}.Debug|x86.ActiveCfg = Debug|x86
+		{0ED4708D-46FB-4608-BB31-D209B729D6CF}.Debug|x86.Build.0 = Debug|x86
+		{0ED4708D-46FB-4608-BB31-D209B729D6CF}.Release|x86.ActiveCfg = Release|x86
+		{0ED4708D-46FB-4608-BB31-D209B729D6CF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

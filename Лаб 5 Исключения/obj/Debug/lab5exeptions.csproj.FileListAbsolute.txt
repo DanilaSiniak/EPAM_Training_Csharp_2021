@@ -1,0 +1,7 @@
+D:\EPAM\lab5exeptions\lab5exeptions\obj\Debug\lab5exeptions.csprojAssemblyReference.cache
+D:\EPAM\lab5exeptions\lab5exeptions\obj\Debug\lab5exeptions.csproj.CoreCompileInputs.cache
+D:\EPAM\lab5exeptions\lab5exeptions\bin\Debug\lab5exeptions.exe.config
+D:\EPAM\lab5exeptions\lab5exeptions\bin\Debug\lab5exeptions.exe
+D:\EPAM\lab5exeptions\lab5exeptions\bin\Debug\lab5exeptions.pdb
+D:\EPAM\lab5exeptions\lab5exeptions\obj\Debug\lab5exeptions.exe
+D:\EPAM\lab5exeptions\lab5exeptions\obj\Debug\lab5exeptions.pdb
