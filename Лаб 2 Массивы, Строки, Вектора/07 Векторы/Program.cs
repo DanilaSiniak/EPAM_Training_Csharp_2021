@@ -16,8 +16,6 @@ namespace Lab4
             int[] mas = new int[n];
             int i, k = 0;
 
-
-            Console.WriteLine("Исходный массив");
             for (i = 0; i < n; i++)
             {
               
@@ -27,12 +25,19 @@ namespace Lab4
             {
                 for (i = 1; i < n - 1; i++)
                 {
-                    if ((mas[i] < mas[i - 1]) && (mas[i] < mas[i + 1]))
+                    if ((mas[i-1] < mas[i]) && (mas[i] > mas[i + 1]))
                     {
-                        sw.WriteLine($"Локальный минимум = {mas[i]}");
+
+                        sw.Write($"{i} ");
                         k++;
+                       
                     }
+
                     Console.WriteLine();
+
+
+
+
                 }
             }
          
