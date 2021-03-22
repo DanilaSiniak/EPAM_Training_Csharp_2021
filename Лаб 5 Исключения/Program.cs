@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace lab5exeptions
 {
-    static class MatrixExt
+     static class MatrixGetRowsColumns
     {
+
+  
         // получения количества строк матрицы
         public static int RowsCount(this int[,] matrix)
         {
@@ -19,9 +21,10 @@ namespace lab5exeptions
         {
             return matrix.GetLength(1);
         }
+
     }
 
-    class Program
+    class Matrix
     {
         // получения матрицы из консоли
         static int[,] GetMatrixFromConsole(string name)
@@ -31,7 +34,11 @@ namespace lab5exeptions
             Console.Write("Количество столбцов матрицы {0}: ", name);
             var c = int.Parse(Console.ReadLine());
 
+           
             var matrix = new int[r, c];
+
+
+
             for (var i = 0; i < r; i++)
             {
                 for (var j = 0; j < c; j++)
@@ -68,15 +75,15 @@ namespace lab5exeptions
             {
                 for (var j = 0; j < matrixB.ColumnsCount(); j++)
                 {
-               
+                    matrixC[i, j] = 0;
                     try
                     {
                         matrixC[i, j] = matrixA[i, j] + matrixB[i, j];
                     }
                     catch(IndexOutOfRangeException) 
                     {
-                        Console.WriteLine(" Ошибка, массив находится вне границы, скорее всего вы хотите сделать операцию " +
-                            " сложения матриц с разным размером матриц!");
+                        throw new Exception("Операция невозможна! Количество столбцов первой матрицы не равно количеству строк второй матрицы." +
+                            "последующие операции так же невозможны");
                     }
                 }
             }
@@ -104,8 +111,7 @@ namespace lab5exeptions
                         }
                         catch(IndexOutOfRangeException)
                         {
-                            Console.WriteLine(" Ошибка, массив находится вне границы, скорее всего вы хотите сделать операцию " +
-                            " умножения матриц с разным размером матриц!");
+                            throw new Exception("Операция невозможна! Количество столбцов первой матрицы не равно количеству строк второй матрицы.");
                         }
                        
                     }
@@ -125,6 +131,7 @@ namespace lab5exeptions
             {
                 for (var j = 0; j < matrixB.ColumnsCount(); j++)
                 {
+                    matrixC[i, j] = 0;
                     try
                     {
                        matrixC[i, j] = matrixA[i, j] - matrixB[i, j];
@@ -132,8 +139,7 @@ namespace lab5exeptions
                                         
                     catch (IndexOutOfRangeException)
                     {
-                        Console.WriteLine(" Ошибка, массив находится вне границы, скорее всего вы хотите сделать операцию " +
-                            " вычитания матриц с разным размером матриц!");
+                            throw new Exception("Операция невозможна! Количество столбцов первой матрицы не равно количеству строк второй матрицы.");
                     }
                 
                     
@@ -151,8 +157,16 @@ namespace lab5exeptions
             {
                 for ( var j = 0; j < matrixB.ColumnsCount(); j++)
                 {
+                    try
+                    {
+                        matrixC[i, j] = 0;
+                    }
+                    catch (IndexOutOfRangeException)
+                    {
+
+                        throw new Exception("Операция невозможна! Количество столбцов первой матрицы не равно количеству строк второй матрицы.");
+                    }
                     
-                    matrixC[i, j] = 0;
                 }
             }
 
@@ -167,23 +181,28 @@ namespace lab5exeptions
             var a = GetMatrixFromConsole("A");
             var b = GetMatrixFromConsole("B");
 
+
             Console.WriteLine("Матрица A:");
             PrintMatrix(a);
 
             Console.WriteLine("Матрица B:");
             PrintMatrix(b);
+
             //// Результат сложения матриц
             var resultSum = MatrixSum(a, b);
             Console.WriteLine("Сумма матриц:");
             PrintMatrix(resultSum);
+
             //// Результат произведения матриц
             var resultMultiplication = MatrixMultiplication(a, b);
             Console.WriteLine("Произведение матриц:");
             PrintMatrix(resultMultiplication);
+
             //// Разность матриц
             var resultSubstract = MatrixSubstract(a, b);
             Console.WriteLine("Разность матриц: ");
             PrintMatrix(resultSubstract);
+
             //// Метод GetEmpty
             var resultMatrixGetEmpty = MatrixGetEmpty(a, b);
             Console.WriteLine("Нулевая матрица: ");
