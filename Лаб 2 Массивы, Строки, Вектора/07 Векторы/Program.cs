@@ -25,18 +25,14 @@ namespace Lab4
             {
                 for (i = 1; i < n - 1; i++)
                 {
-                    if ((mas[i-1] < mas[i]) && (mas[i] > mas[i + 1]))
+                    if ((mas[i-1] < mas[i]) && (mas[i] < mas[i + 1]))
                     {
 
-                        sw.Write($"{i} ");
-                        k++;
+                        sw.WriteLine($" " mas[i]);
+                        
                        
                     }
-
-                    Console.WriteLine();
-
-
-
+               
 
                 }
             }

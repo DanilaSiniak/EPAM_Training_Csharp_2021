@@ -1,0 +1,6 @@
+D:\EPAM\lab6Interfeis\lab6Interfeis\bin\Debug\lab6Interfeis.exe
+D:\EPAM\lab6Interfeis\lab6Interfeis\bin\Debug\lab6Interfeis.pdb
+D:\EPAM\lab6Interfeis\lab6Interfeis\obj\Debug\lab6Interfeis.csprojAssemblyReference.cache
+D:\EPAM\lab6Interfeis\lab6Interfeis\obj\Debug\lab6Interfeis.csproj.CoreCompileInputs.cache
+D:\EPAM\lab6Interfeis\lab6Interfeis\obj\Debug\lab6Interfeis.exe
+D:\EPAM\lab6Interfeis\lab6Interfeis\obj\Debug\lab6Interfeis.pdb
