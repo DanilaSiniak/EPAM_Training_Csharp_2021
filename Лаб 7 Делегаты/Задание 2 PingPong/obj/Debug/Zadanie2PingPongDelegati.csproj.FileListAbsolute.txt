@@ -1,0 +1,7 @@
+D:\EPAM\Zadanie2PingPongDelegati\Zadanie2PingPongDelegati\bin\Debug\Zadanie2PingPongDelegati.exe.config
+D:\EPAM\Zadanie2PingPongDelegati\Zadanie2PingPongDelegati\bin\Debug\Zadanie2PingPongDelegati.exe
+D:\EPAM\Zadanie2PingPongDelegati\Zadanie2PingPongDelegati\bin\Debug\Zadanie2PingPongDelegati.pdb
+D:\EPAM\Zadanie2PingPongDelegati\Zadanie2PingPongDelegati\obj\Debug\Zadanie2PingPongDelegati.csprojAssemblyReference.cache
+D:\EPAM\Zadanie2PingPongDelegati\Zadanie2PingPongDelegati\obj\Debug\Zadanie2PingPongDelegati.csproj.CoreCompileInputs.cache
+D:\EPAM\Zadanie2PingPongDelegati\Zadanie2PingPongDelegati\obj\Debug\Zadanie2PingPongDelegati.exe
+D:\EPAM\Zadanie2PingPongDelegati\Zadanie2PingPongDelegati\obj\Debug\Zadanie2PingPongDelegati.pdb
