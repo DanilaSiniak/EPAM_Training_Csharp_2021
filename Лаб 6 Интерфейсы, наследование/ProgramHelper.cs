@@ -47,5 +47,7 @@ namespace lab6Interfeis
             }
             return false;
         }
+
+     
     }
 }

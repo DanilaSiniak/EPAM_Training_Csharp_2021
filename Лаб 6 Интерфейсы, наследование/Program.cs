@@ -13,6 +13,12 @@ namespace lab6Interfeis
     {
         static void Main(string[] args)
         {
+            ProgramConverter[] Elements =
+            {
+                new ProgramHelper(),
+                new ProgramConverter(),
+       
+            };
             ProgramHelper[] ProgramHelperVariable = new ProgramHelper[5];
             ProgramConverter[] ProgramConverterVariable = new ProgramConverter[5];
             string CodeString, Language;
@@ -21,67 +27,52 @@ namespace lab6Interfeis
             //// Код на языке VB заканчивается на заглавную букву V
 
             Console.Write("Напишите код, если вы хотите написать C# код, то в конце строки оставьте C. Если VB код, то оставьте в конце строки V): ");
+            Console.WriteLine("Для продолжения нажмите Enter ( после заполнения )");
             CodeString = Console.ReadLine();
 
 
-            Console.Write("Напишите название языка программирования: ");
+            Console.WriteLine("Напишите название языка программирования: ");
+            Console.WriteLine("Для продолжения нажмите Enter ( после заполнения )");
             Language = Console.ReadLine();
 
-            Console.WriteLine("Нажимайте Enter несколько раз: ");
-            Console.ReadLine();
-
-            Console.WriteLine("Статус интерфейса ProgramHelper: ");
-            for (int i = 0; i < ProgramHelperVariable.Length; i++)
+            for (int i = 0; i < Elements.Length; i++)
             {
-                ProgramHelperVariable[i] = new ProgramHelper();
-                if (ProgramHelperVariable[i] is ICodeChecker)
+                if (Elements[i] as ICodeChecker != null)
                 {
-                    if (ProgramHelperVariable[i].CodeCheckSyntax(CodeString, Language))
+                    Console.WriteLine($"{i + 1}. Реализует интерфейс ICodeChecker:");
+                    ProgramHelper Helper = new ProgramHelper();
+                    if (Helper.CodeCheckSyntax(CodeString, Language))
                     {
                         if (Language == "C#")
                         {
-                            Console.WriteLine(ProgramHelperVariable[i].ConvertToVB(CodeString));
+                            Console.WriteLine(Elements[i].ConvertToVB(CodeString));
+                            Console.WriteLine("Для продолжения нажмите Enter");
                             Console.ReadLine();
-
-
                         }
                         else if (Language == "VB")
                         {
-                            Console.WriteLine(ProgramHelperVariable[i].ConvertToSharp(CodeString));
+                            Console.WriteLine(Elements[i].ConvertToSharp(CodeString));
+                            Console.WriteLine("Для продолжения нажмите Enter");
                             Console.ReadLine();
                         }
                     }
-                }
-                else
-                {
-                    Console.WriteLine(ProgramHelperVariable[i].ConvertToSharp(CodeString));
-                    Console.ReadLine();
-                    Console.WriteLine(ProgramHelperVariable[i].ConvertToVB(CodeString));
-                    Console.ReadLine();
-                }
-            }
-            Console.WriteLine("Статус интерфейса ProgramConverter: ");
-            for (int i = 0; i < ProgramConverterVariable.Length; i++)
-            {
-                ProgramConverterVariable[i] = new ProgramConverter();
-                if (!(ProgramConverterVariable[i] is ICodeChecker))
-                {
-                    if (Language == "C#")
+                    else
                     {
-                        Console.WriteLine(ProgramConverterVariable[i].ConvertToVB(CodeString));
-                        Console.ReadLine();
-                    }
-                    else if (Language == "VB")
-                    {
-                        Console.WriteLine(ProgramConverterVariable[i].ConvertToSharp(CodeString));
+                        Console.WriteLine("Язык программирования неверный!");
+                        Console.WriteLine("Для продолжения нажмите Enter");
                         Console.ReadLine();
                     }
                 }
                 else
                 {
-                    Console.WriteLine(ProgramConverterVariable[i].ConvertToSharp(CodeString));
+                    Console.WriteLine($"{i + 1}. Выполняется два метода преобрзования:");
+                    Console.WriteLine("Для продолжения нажмите Enter");
                     Console.ReadLine();
-                    Console.WriteLine(ProgramConverterVariable[i].ConvertToVB(CodeString));
+                    Console.WriteLine(Elements[i].ConvertToSharp(CodeString));
+                    Console.WriteLine("Для продолжения нажмите Enter");
+                    Console.ReadLine();
+                    Console.WriteLine(Elements[i].ConvertToVB(CodeString));
+                    Console.WriteLine("Для продолжения нажмите Enter");
                     Console.ReadLine();
                 }
             }
