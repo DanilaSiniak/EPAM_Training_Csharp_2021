@@ -1,5 +1,5 @@
-﻿using DelegateZadanie3;
-using System;
+﻿using System;
+using DelegateZadanie3;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +7,11 @@ using System.Threading;
 
 namespace DelegateZadanie3
 {
+
+    /*
+       Создать приложение, в котором генератор события после генерации первого события генерирует последующие события только в том случае, 
+       если приемник события уведомляет, что событие принято (квитирование). Для квитирования использовать второй параметр обработчика события. 
+    */
     class Program : EventGenerator
     {
         const int EVENTCOUNTER = 10;
@@ -28,11 +33,16 @@ namespace DelegateZadanie3
             Console.WriteLine("Got Event!");
         }
     }
-    
+
 
 }
+
+public class TwoParametrEventArgs : EventArgs { }
+
+
 public class EventGenerator
 {
+   
     public event EventHandler GeneratorEvent = delegate { };
     public int GenerationCount { get; set; }
     public static TwoParametrEventArgs pTP = new TwoParametrEventArgs();
@@ -51,3 +61,4 @@ public class EventGenerator
 
     }
 }
+
