@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Collections;
+using System.IO;
 
 namespace Generic
 {
@@ -17,55 +18,55 @@ namespace Generic
                 {
                     Weight = 70,
                     Height = 178,
-                    FirstName = "Стас",
-                    LastName = "Коташевич",
+                    FirstName = "Стас ",
+                    LastName = "Коташевич ",
                     University = "BSTU"
                 };
                 var st2 = new Students
                 {
                     Weight = 54,
                     Height = 172,
-                    FirstName = "Александр",
-                    LastName = "Маевский",
-                    University = "BSTU"
+                    FirstName = "Александр ",
+                    LastName = "Маевский ",
+                    University = "BSTU "
                 };
                 var st3 = new Students
                 {
                     Weight = 54,
                     Height = 181,
-                    FirstName = "Влад",
-                    LastName = "Ковальчук",
-                    University = "BSU"
+                    FirstName = "Влад ",
+                    LastName = "Ковальчук ",
+                    University = "BSU "
                 };
                 var st4 = new Students
                 {
                     Weight = 78,
                     Height = 181,
-                    FirstName = "Иван",
-                    LastName = "Иваненко",
-                    University = "BSU"
+                    FirstName = "Иван ",
+                    LastName = "Иваненко ",
+                    University = "BSU "
                 };
                 var st5 = new Students
                 {
                     Weight = 81,
                     Height = 154,
-                    FirstName = "Максим",
-                    LastName = "Боровский",
+                    FirstName = "Максим ",
+                    LastName = "Боровский ",
                     University = "BSTU"
                 };
                 var wr1 = new Workers
                 {
                     Weight = 67,
                     Height = 190,
-                    FirstName = "Павел",
-                    LastName = "Галанин",
+                    FirstName = "Павел ",
+                    LastName = "Галанин ",
                     Salary = 578.4
                 };
                 var wr2 = new Workers
                 {
                     Weight = 67,
                     Height = 190,
-                    FirstName = "Дмитрий",
+                    FirstName = "Дмитрий ",
                     LastName = "Грибовский  ",
                     Salary = 976.5
                 };
@@ -73,8 +74,8 @@ namespace Generic
                 {
                     Weight = 55,
                     Height = 172,
-                    FirstName = "Денис",
-                    LastName = "Тупик",
+                    FirstName = "Денис ",
+                    LastName = "Тупик ",
                     Salary = 493
                 };
                 var container1 = new HumanContainer<Human> { st1, st2, wr1, wr2,st3,st4,st5,wr3 };
@@ -88,11 +89,13 @@ namespace Generic
                 var list = new List<HumanContainer<Human>>();
                 list.Add(container1);
 
-                //where          +++
-                Console.WriteLine("\nLinq To objects: Where");
-                var whereRes = container1.Where(h => h.FullName.StartsWith("Д"));
-                foreach (var human in whereRes)
-                    Console.WriteLine(human.ToString());
+                //orderBy
+                Console.WriteLine("\nLinq To objects: OrderBy by Weight");
+                var orderRes = container1.OrderBy(h => h.Weight);
+                foreach (var human in orderRes)
+                    Console.WriteLine(human);
+
+       
                 //select         +++
                 Console.WriteLine("\nLinq To objects: Select");
                 var selectRes = container1.Select((h, i) => new { Index = i + 1, h.FullName });
@@ -111,20 +114,25 @@ namespace Generic
                 var minRes = container1.Min(h => h.Height);
                 Console.WriteLine(minRes);
 
-                //найти максимальную коллекцию, содержащую указанный элемент
+                //найти максимальную коллекцию, содержащую максимальный рост
                 Console.WriteLine("\nLinq To objects: Max Height");
                 var maxRes = container1.Max(h => h.Height);
                 Console.WriteLine(maxRes);
+
                 ///найти количество коллекций, содержащих указанный элемент, 
                 Console.WriteLine("\nLinq To objects: Same elements");
                 var Same = container1.Count(h => h.Height==190);
                 Console.WriteLine(Same);
+                container1.WriteToFile();
             }
+
+            
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
             Console.ReadKey();
+        
         }
     }
 
@@ -182,10 +190,25 @@ namespace Generic
             }
             throw new NullReferenceException();
         }
-        public void Sort()
+
+        public void WriteToFile()
         {
-            _container.Sort();
+            using (var File = new StreamWriter(Path.GetFullPath("Outlet.txt")))
+            {
+                foreach (var item in _container)
+                {
+                    
+                    File.Write("Имя: " + item.FirstName + "\n");
+                    File.Write("Фамилия: " + item.LastName + "\n");
+                    File.Write("Рост: " + item.Height + "\n");
+                    File.Write("Вес: " + item.Weight + "\n");
+                    File.Write("----------------------------" + "\n");
+
+                }
+                File.Dispose();
+            }
         }
+      
     
         public IEnumerator<T> GetEnumerator()
         {

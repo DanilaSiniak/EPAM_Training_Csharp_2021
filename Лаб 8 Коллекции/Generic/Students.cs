@@ -16,7 +16,7 @@ namespace Generic
         public override string ToString()
         {
             return string.Format(
-                "Класс Student: \n Полное имя: {0}, Вес: {1}, Рост: {2}, Университет : {3}",
+                "Класс Student: \n Полное имя: {0}, Рост: {1}, Вес: {2}, Университет : {3}",
                 FullName,
                 Height,
                 Weight,

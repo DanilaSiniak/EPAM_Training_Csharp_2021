@@ -15,7 +15,7 @@ namespace Generic
         public void DoWord() { }
         public override string ToString()
         {
-            return string.Format("Класс Worker: \n Полное имя: {0}, Рост: {1}, Вес: {2}, Зарплаа: {3}",
+            return string.Format("Класс Worker: \n Полное имя: {0}, Рост: {1}, Вес: {2}, Зарплата: {3}",
                 FullName,
                 Height,
                 Weight,
